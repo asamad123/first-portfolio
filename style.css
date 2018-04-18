@@ -6,6 +6,7 @@ body{
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -31,7 +32,7 @@ header{
     width: auto;
 }
 
-h1{
+.showcase-h1{
     font-size: 1.5em;
     text-transform: uppercase;
     /* margin-top: -50px; */
@@ -40,14 +41,14 @@ h1{
     line-height: 28px;
 }
 
-h1::before{
+.showcase-h1::before{
     content: open-quote;
     display: inline;
     margin-right: 2px;
     font-size: 40px;
     color: lightslategray;
 }
-h1::after{
+.showcase-h1::after{
     content: close-quote;
     display: inline;
     margin-left: 2px;
@@ -55,7 +56,7 @@ h1::after{
     color: lightslategray;
 }
 
-h3{
+.showcase-h3{
     font-weight: lighter;
     padding-top:10px;
     text-transform: capitalize;
@@ -154,11 +155,11 @@ button:focus{
     }
 
     @media only screen and (min-width: 800px) {
-        h1{
+        .showcase-h1{
             font-size: 3em;
             line-height: 60px;
         }
-        h3{
+        .showcase-h3{
             margin-top:20px;
             font-size: 1.5em;
         }
@@ -170,7 +171,148 @@ button:focus{
 
         }
     }
-
+/* animation delay */
     .fadeIn{
         animation-delay: 1.2s;
     }
+
+    /* Project Section */
+    #project{
+        height: 100vh;
+        width: 100%;
+        background: #3F3F3F;
+    }
+    .project-h1{
+        text-align: left;
+        padding:50px;
+        color: white;
+    }
+
+    .project-h1::after{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 50px;
+        background: black;
+        color: red;
+        margin-left: 50px;
+        margin-top: 8px;
+        /* margin-left: 100px; */
+    }
+
+
+figure.thumbnail {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  text-align: left;
+}
+/* figure.thumbnail * {
+  box-sizing: border-box;
+} */
+figure.thumbnail img {
+  max-width: 100%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+figure.thumbnail figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 3em;
+  width: 100%;
+  height: 100%;
+}
+figure.thumbnail figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.thumbnail h2,
+figure.thumbnail p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+figure.thumbnail h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.thumbnail h2 span {
+  font-weight: 800;
+}
+figure.thumbnail p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.thumbnail a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+figure.thumbnail:hover img {
+  opacity: 0.3;
+}
+figure.thumbnail:hover figcaption h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+figure.thumbnail:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+figure.thumbnail:hover figcaption::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure{
+    border: 1px solid gray;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
