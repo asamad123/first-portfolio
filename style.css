@@ -1,0 +1,172 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: url('showcase.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    background-position: center;
+    text-align: center;
+    color: #3F3E3D;
+}
+
+/* main content  */
+.content-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+}
+
+h1{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    /* margin-top: -50px; */
+    font-weight: 800;
+    margin-top: 20px;
+    line-height: 28px;
+}
+
+h1::before{
+    content: open-quote;
+    display: inline;
+    margin-right: 2px;
+    font-size: 40px;
+    color: lightslategray;
+}
+h1::after{
+    content: close-quote;
+    display: inline;
+    margin-left: 2px;
+    font-size: 40px;
+    color: lightslategray;
+}
+
+h3{
+    font-weight: lighter;
+    padding-top:10px;
+    text-transform: capitalize;
+}
+ 
+ .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+button{
+    height: 35px;
+    width: 100px;
+    margin: 8px;
+    background: transparent;
+    font-size: 1em;
+    border: 2px solid darkslategray;
+    border-radius: 3px;
+    transition: ease-in-out 0.5s;
+} 
+
+button:focus{
+    outline: none;
+}
+
+/* hover effect  for showcase buttons*/
+.hvr-bounce-to-right{display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0,0,0,0);
+    position:relative;
+    -webkit-transition-property:color;
+    transition-property:color;
+    -webkit-transition-duration:.5s;transition-duration:.5s
+}
+
+.hvr-bounce-to-right:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#3F3E3D;
+    -webkit-transform:scaleX(0);
+    transform:scaleX(0);
+    -webkit-transform-origin:0 50%;
+    transform-origin:0 50%;
+    -webkit-transition-property:transform;
+    transition-property:transform;
+    -webkit-transition-duration:.5s;
+    transition-duration:.5s;
+    -webkit-transition-timing-function:ease-out;transition-timing-function:ease-out
+}
+    .hvr-bounce-to-right:active,.hvr-bounce-to-right:focus,.hvr-bounce-to-right:hover{
+        color:#fff
+    }
+
+    .hvr-bounce-to-right:active:before,.hvr-bounce-to-right:focus:before,.hvr-bounce-to-right:hover:before{
+        -webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transition-timing-function:cubic-bezier(0.52,1.64,.37,.66);transition-timing-function:cubic-bezier(0.52,1.64,.37,.66)
+    }
+
+    .hvr-bounce-to-left{
+        display:inline-block;
+        vertical-align:middle;
+        -webkit-transform:perspective(1px) translateZ(0);
+        transform:perspective(1px) translateZ(0);
+        box-shadow:0 0 1px rgba(0,0,0,0);
+        position:relative;
+        -webkit-transition-property:color;transition-property:color;
+        -webkit-transition-duration:.5s;
+        transition-duration:.5s
+    }
+    .hvr-bounce-to-left:before{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:#2098D1;
+        -webkit-transform:scaleX(0);
+        transform:scaleX(0);
+        -webkit-transform-origin:100% 50%;
+        transform-origin:100% 50%;
+        -webkit-transition-property:transform;
+        transition-property:transform;
+        -webkit-transition-duration:.5s;
+        transition-duration:.5s;
+        -webkit-transition-timing-function:ease-out;transition-timing-function:ease-out
+    }
+
+    @media only screen and (min-width: 800px) {
+        h1{
+            font-size: 3em;
+            line-height: 60px;
+        }
+        h3{
+            margin-top:20px;
+            font-size: 1.5em;
+        }
+
+        button{
+            margin-top:20px;
+            height: 45px;
+            width: 110px;
+
+        }
+    }
