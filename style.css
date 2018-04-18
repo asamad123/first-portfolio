@@ -170,3 +170,7 @@ button:focus{
 
         }
     }
+
+    .fadeIn{
+        animation-delay: 1.2s;
+    }
