@@ -12,16 +12,16 @@ $(document).ready(function () {
 });
 
 
-// hamburger animation
-$(document).ready(function(){
+
+// hamburger animation]
     $(".hamburger").click(function(){
       $(this).toggleClass("is-active");
     });
-  });
   
 // add and remove class for navbar on mobile sizes
-  $(document).ready(function(){
     $("#hamburger").click(function(){
         $("ul").toggleClass("addNav");
     });
-});
+
+
+
