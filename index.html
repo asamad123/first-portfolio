@@ -27,11 +27,11 @@
                 </div>
 
                 <!-- navbar both deskptop and responsive -->
-                <ul>
-                    <li><a href="#showcase">Home</a></li>
-                    <li><a href="portfolio">Portfolio</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav-links">
+                    <li class="scroll"><a href="#showcase">Home</a></li>
+                    <li class="scroll"><a href="#about">About</a></li>
+                    <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+                    <li class="scroll"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="content-container">
@@ -175,15 +175,34 @@
 
     <div id="contact">
         <div class="container">
+            <h1>Contact</h1>
+            <div class="grid">
+                <span class="child-grid">
+                    <i class="far fa-envelope fa-lg"></i>
+                    <p>asamad15@outlook.com</p>
+                </span>
+                <span class="child-grid">
+                    <i class="fas fa-phone fa-lg"></i>
+                    <p>07757808694</p>
+                </span>
+                <span class="child-grid">
+                <i class="fas fa-map-marker-alt fa-lg"></i>
+                <p>London, United Kingdom</p>
+                </span>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Message">
+                <input  class="submit" type="submit">
+            </form>
         </div>
     </div>
    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
-    <script
-  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
- 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
