@@ -456,9 +456,6 @@ button:focus{
 
 
 
-
-
-
 /* Portfolio Section */
 #portfolio{
         height: 100vh;
@@ -603,4 +600,47 @@ figure{
     height: auto;
     padding-bottom: 40px;
 }
+}
+
+/* freelance section */
+#freelance{
+    background: url(freelance.png);
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+#freelance .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#freelance *{
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.btn-freelance{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 25px;
+    margin-top: 35px;
+}
+
+.btn-freelance:hover{
+    background: #fff;
+    color: black !important;
+}
+
+#contact{
+    height: 100vh;
+    width: 100%;
 }
