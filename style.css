@@ -314,6 +314,81 @@ button:focus{
     }
 /* end of showcase */
 
+
+/* about section */
+
+#about{
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+#about h3{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+
+}
+#about h6{
+    font-size: 18px;
+    margin: 25px 0;
+    font-weight: bold;
+}
+#about p{
+    text-align: justify;
+}
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 5%;
+}
+.underline{
+    margin: 6px 0 0 0;
+    width: 60px;
+    background: gray;
+    height: 3px;
+}
+.container img{
+    max-width: 100%;
+    min-height: 350px;  
+}
+.about-content{
+    max-width: 700px;
+}
+
+.icons{
+    display: flex ;
+}
+
+.icons i{
+    margin: 30px 25px 0 0;
+    transition: 0.3s;
+}
+
+.icons a i:hover{
+    color: gray;
+    
+}
+
+/* repsonsive media queries */
+@media only screen and (max-width: 1050px) {
+    #about .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #about .container img{
+        max-width: auto;
+        margin: 0 auto;
+    }
+    .about-content{
+        margin-top: 40px;
+    }
+    .icons{
+        justify-content: center;
+    }
+}
+
 /* services section */
 
 #services{
@@ -342,7 +417,7 @@ button:focus{
     align-items: center;
     width: 100%;
     height: auto;
-
+    padding-bottom: 50px;
 }
 
 .cards{
@@ -383,10 +458,6 @@ button:focus{
 
 
 
-
-
-
-
 /* Portfolio Section */
 #portfolio{
         height: 100vh;
@@ -403,20 +474,6 @@ button:focus{
         color: #3F3E3D;
 
 }
-/* 
-.portfolio-h1::after{
-        content: '';
-        display: block;
-        height: 2px;
-        background: black;
-        color: red;
-        margin-left: 50px;
-        margin-top: 8px;
-        text-align: center;
-        margin-left: 100px;
-
-} */
-
 
 .thumbnail {
   font-family: 'Raleway', Arial, sans-serif;
