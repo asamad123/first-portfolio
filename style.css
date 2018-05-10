@@ -241,7 +241,7 @@ button:focus{
     -webkit-transition-duration:.5s;
     transition-duration:.5s;
     -webkit-transition-timing-function:ease-out;transition-timing-function:ease-out
-}
+ }
     .hvr-bounce-to-right:active,.hvr-bounce-to-right:focus,.hvr-bounce-to-right:hover{
         color:#fff
     }
@@ -261,27 +261,27 @@ button:focus{
         -webkit-transition-duration:.5s;
         transition-duration:.5s
     }
+
     .hvr-bounce-to-left:before{
-        content:"";
-        position:absolute;
-        z-index:-1;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background:#2098D1;
-        -webkit-transform:scaleX(0);
-        transform:scaleX(0);
-        -webkit-transform-origin:100% 50%;
-        transform-origin:100% 50%;
-        -webkit-transition-property:transform;
-        transition-property:transform;
-        -webkit-transition-duration:.5s;
-        transition-duration:.5s;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
         -webkit-transition-timing-function:ease-out;transition-timing-function:ease-out
     }
 
     @media only screen and (min-width: 800px) {
+        
         .showcase-h1{
             font-size: 3em;
             line-height: 60px;
@@ -295,7 +295,6 @@ button:focus{
             margin-top:20px;
             height: 45px;
             width: 110px;
-
         }
     }
 /* animation delay */
@@ -365,6 +364,7 @@ button:focus{
     min-height: 350px;  
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
 .about-content{
     max-width: 700px;
 }
@@ -380,7 +380,6 @@ button:focus{
 
 .icons a i:hover{
     color: gray;
-    
 }
 
 /* repsonsive media queries */
@@ -393,9 +392,11 @@ button:focus{
         max-width: auto;
         margin: 0 auto;
     }
+
     .about-content{
         margin-top: 40px;
     }
+
     .icons{
         justify-content: center;
     }
@@ -434,7 +435,9 @@ button:focus{
     width: 300px;
     transition: 0.3s ease-in;
     background: #fff;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);      }
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 
 .cards:hover{
     transform: translateY(-5px);
@@ -445,14 +448,20 @@ button:focus{
     /* background: red; */
     margin-top: 20px;
 }
+
 .cards h4{
     text-align: center;
     margin: 20px;
     font-size: 20px;
     letter-spacing: 3px;
 }
+
 .cards p{
+    margin: 30px 10px;
     text-align: center;
+    text-align: justify;
+    text-transform: capitalize;
+    line-height: 25px;
 }
 
 .icons{
@@ -468,11 +477,9 @@ button:focus{
         width: 100%;
         background: #fcfcfc;
         padding: 50px 0;
-
 }
 
 .block-container{
-    
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -493,7 +500,6 @@ button:focus{
  }
 }
 @media only screen and (max-width: 750px) {
-    
     .block-container{
         max-width: 190px;
         margin: 0 auto;
@@ -503,6 +509,14 @@ button:focus{
         height: 250px;
         width: 300px;
         margin: 20px 0;
+        padding: 0;
+    }
+    
+    .block-container a img{
+        height: 250px;
+        width: 350px;
+        margin: 20px 0;
+        padding: 0;
     }
 }
 
@@ -549,7 +563,6 @@ button:focus{
     /* max-width: 95%; */
     background: #F3F3F3;
     padding-top: 50px;
-
 }
 
 #contact .container{
@@ -617,6 +630,10 @@ form input{
         text-indent: 20px;
     }
 
+  form input:focus {
+        outline: 0;
+        border: none;
+    }
 
     form{
         max-width: 300px;
