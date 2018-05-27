@@ -625,6 +625,11 @@ form input{
     text-indent: 0px;
 }
 
+.footer-txt{
+    text-align: center;
+    margin: 20px 0;
+}
+
 
 /* responsive for mobile device */
 @media only screen and (max-width: 750px) {
