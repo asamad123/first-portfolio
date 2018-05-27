@@ -522,16 +522,16 @@ button:focus{
 
 /* freelance section */
 #freelance{
-    background: url(images/freelance.jpg);
+    background: url(images/workspace.svg);
     background-position: center;
     background-size: cover;
-    height: 45vh;
+    max-height: 45vh;
     width: 100%;
     background-attachment: fixed;
 }
 
 #freelance .container{
-    height: 100%;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -539,10 +539,11 @@ button:focus{
 }
 
 #freelance *{
-    color: #fff;
+    color: black;
     font-family: sans-serif;
     text-decoration: none;
 }
+
 
 .btn-freelance{
     border: 1px solid white;
